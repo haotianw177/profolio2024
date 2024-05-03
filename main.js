@@ -1,8 +1,4 @@
-// la la la la la la________________________ what loading speed?
-// hand-made by Haotian Wang, 04/17/2024
-// i was listening to Grimes on repeat
-// for maintenance request email @haotianwang.design@gmail.com
-// bro window resize is such a pain in the ass
+// hand-made by Haotian Wang, 05/03/2024
 
 const textContainer = document.querySelector('.rightScreenContainer');
 const textItems = textContainer.querySelectorAll('.rightScreenContent');
@@ -220,7 +216,7 @@ function updateLastUpdated(lastCommitDate) {
     timePhrase = "few months ago";
   }
 
-  document.querySelector(".js-last-updated").innerText = ", updated @" + timePhrase;
+  document.querySelector(".lastUpdatedBox").innerText = "Updated @" + timePhrase;
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -242,13 +238,11 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(updateDateTime, 1000); // Update the date and time every second
 });
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  const linkOfTheWeek = document.getElementById('linkOfTheWeek');
+// document.addEventListener('DOMContentLoaded', function() {
+//   const linkOfTheWeek = document.getElementById('linkOfTheWeek');
   
-  if (linkOfTheWeek) {
-    linkOfTheWeek.href = 'https://thisismold.com/mold-magazine/flavor-chemistry-flavorama-arielle-johnson'; 
-  }
-});
+//   if (linkOfTheWeek) {
+//     linkOfTheWeek.href = 'https://thisismold.com/mold-magazine/flavor-chemistry-flavorama-arielle-johnson'; 
+//   }
+// });
 
