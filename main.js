@@ -179,8 +179,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // });
 
 function fetchLastUpdated() {
-  const repoOwner = 'wanghveganjerky'; 
-  const repoName = 'profolio2023';  
+  const repoOwner = 'haotianw177'; 
+  const repoName = 'profolio2024';  
   const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits`;
 
   fetch(apiUrl)
