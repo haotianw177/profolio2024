@@ -35,6 +35,7 @@ a:hover {
 }
 
 .leftContainer {
+  padding-top: 20px;
   background-color: transparent; 
   z-index: 1010;
   position: relative;  /* This is correct as it keeps the container in the normal document flow */
@@ -45,7 +46,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;  /* Ensures all children align to the left edge */
-  padding: 10px 0;  /* Maintains padding for all children */
   box-sizing: border-box;  /* Includes padding in width calculation */
 }
 
@@ -58,13 +58,10 @@ body::-webkit-scrollbar {
 .headerInfo, .categoriesMenuButton{
   background-color: transparent; 
   width: 85%;  /* Standardizes width for alignment */
-  padding: 5px;  /* Ensures padding inside each element */
-  margin: 10px 0;  /* Standardizes and adds vertical spacing */
   border: none;
   display: flex;
   align-items: center;
   justify-content: flex-start;  /* Ensures content aligns to the left */
-  text-align: left;
   display: inline-block;
 }
 
@@ -75,10 +72,9 @@ body::-webkit-scrollbar {
 .categoriesMenuButton {
   width: auto;
   height: auto;  /* Adjusts height to content */
-  /* padding: 3px; */
-  /* border-radius: 20px; */
-  margin: 0px 0;
-  transition: background-color 0.3s ease-in-out;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
   display: block;  /* Changed from flex to block for standard flow */
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -165,16 +161,16 @@ h3 {
 }
 
 /* h4 is for contact */
-h4 {
+/* h4 {
   text-align: left;
   margin: 5%;
   font-size: 1.5em;
   color: blue;
-}
+} */
 
 h5{}
 
-/* h6 is for student names */
+/* h6 is for project names */
 h6 {
   text-align: left;
   font-size: 1.2em;
@@ -224,36 +220,6 @@ img, video, canvas, iframe {
 }
 
 
-@keyframes rotateImage {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-}
-
-@media screen and (min-width: 769px) {
-  img[src="images/earth.png"] {
-      animation: rotateImage 20s linear infinite;
-      display: block;
-      position: fixed;  
-      top: 30%;        
-      left: 10%;     
-      transform: translate(-50%, -50%); 
-      max-width: 30%;   
-      max-height: 30%; 
-      z-index: 1000;    
-      pointer-events: none;  
-  }
-}
-
-@media screen and (max-width: 768px) {
-  img[src="images/earth.png"] {
-      display: none; 
-  }
-}
-
 @media screen and (max-width: 768px) {
   .leftContainer {
       width: 100%;
@@ -283,7 +249,7 @@ img, video, canvas, iframe {
 @media screen and (max-width: 768px) {
   .leftContainer {
       margin-left: 5px;  /* Adds left margin to leftContainer */
-      padding-top: 30px;  /* Keeps your existing top padding */
+      padding-top: 10px;  /* Keeps your existing top padding */
   }
 
   .rightScreenContainer {
@@ -316,9 +282,7 @@ img, video, canvas, iframe {
       z-index: 1001;  /* Ensure it's on top but below header */
   }
 
-  .leftContainer {
-      padding-top: 60px;  /* Enough padding to avoid overlap with header/toggle button */
-  }
+
 }
 
 @media screen and (max-width: 768px) {

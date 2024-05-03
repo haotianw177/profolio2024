@@ -122,36 +122,16 @@ document.addEventListener('DOMContentLoaded', function() {
       dropdownMenu.style.display = 'block';
     }
   });
-
-  // Ensure correct display on resize
-  window.addEventListener('resize', function() {
-    if (window.innerWidth > 768) {
-      // Desktop-specific adjustments
-      dropdownMenu.style.display = 'block'; // Ensure the dropdown is always visible on desktop
-      document.querySelectorAll('.leftContainer .headerInfo, .leftContainer .footerInfo').forEach(elem => {
-        elem.style.display = 'block'; // Ensure all leftContainer elements are visible on desktop
-      });
-  
-      // Ensure that the appropriate rightScreenContent is displayed
-      if (!textItems[currentActiveText] || textItems[currentActiveText].style.display === 'none') {
-        setActiveText(currentActiveText); // Ensure current or default content is visible
-      }
-    } else {
-      // Mobile-specific adjustments
-      dropdownMenu.style.display = 'none'; // Keep the dropdown hidden until toggled on mobile
-      textItems.forEach(item => item.style.display = 'none'); // Hide all right screen content on mobile initially
-    }
-  });
   
   // Function to set active text, improved to ensure visibility handling
-  function setActiveText(index) {
-    textItems.forEach((item, idx) => {
-      item.style.display = 'none'; // Hide all first
-    });
-    if (textItems[index]) {
-      textItems[index].style.display = 'block'; // Show only the active item
-    }
-  }  
+  // function setActiveText(index) {
+  //   textItems.forEach((item, idx) => {
+  //     item.style.display = 'none'; // Hide all first
+  //   });
+  //   if (textItems[index]) {
+  //     textItems[index].style.display = 'block'; // Show only the active item
+  //   }
+  // }  
 });
 
 // jquery for image preview
