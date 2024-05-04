@@ -173,7 +173,7 @@ h5{}
 /* h6 is for project names */
 h6 {
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: black;
   margin: 0;
   padding: 0;
@@ -248,12 +248,12 @@ img, video, canvas, iframe {
 
 @media screen and (max-width: 768px) {
   .leftContainer {
-      margin-left: 5px;  /* Adds left margin to leftContainer */
-      padding-top: 10px;  /* Keeps your existing top padding */
+      margin-left: 15px;  /* Adds left margin to leftContainer */
+      padding-top: 0px;  /* Keeps your existing top padding */
   }
 
   .rightScreenContainer {
-      margin-left: 5px;  /* Adds left margin to rightScreenContainer */
+      margin-left: 15px;  /* Adds left margin to rightScreenContainer */
   }
 }
 
