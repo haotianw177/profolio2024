@@ -98,6 +98,7 @@ body::-webkit-scrollbar {
   bottom: 0;
   width: 70%;
   overflow-y: scroll;
+  
 }
 
 .rightScreenContent h2 {
@@ -126,6 +127,7 @@ body::-webkit-scrollbar {
   margin-right: 30px;
   margin-bottom: 30px;  /* Adds margin only at the bottom of each image */
   display: block;  /* Ensures the image block behaves properly */
+  border-radius: 15px;
 }
 
 .imageContainer img:last-child {
